@@ -1,0 +1,101 @@
+[
+  {
+    "id": "001",
+    "name": "Bulbasaur",
+	"cost": 25,
+	"evolution_name": "Ivysaur",
+	"evolution_id": "002"
+  },
+  {
+    "id": "004",
+    "name": "Charmander",
+	"cost": 25,
+	"evolution_name": "Charmeleon",
+	"evolution_id": "005"
+  },
+  {
+    "id": "007",
+    "name": "Squirtle",
+	"cost": 25,
+	"evolution_name": "Wartortle",
+	"evolution_id": "008"
+  },
+  {
+    "id": "010",
+    "name": "Caterpie",
+	"cost": 12,
+	"evolution_name": "Metapod",
+	"evolution_id": "011"
+  },
+  {
+    "id": "013",
+    "name": "Weedle",
+	"cost": 12,
+	"evolution_name": "Kakuna",
+	"evolution_id": "014"
+  },
+  {
+    "id": "016",
+    "name": "Pidgey",
+	"cost": 12,
+	"evolution_name": "Pidgeotto",
+	"evolution_id": "017"
+  },
+  {
+    "id": "019",
+    "name": "Rattata",
+	"cost": 25,
+	"evolution_name": "Raticate",
+	"evolution_id": "020"
+  },
+  {
+    "id": "021",
+    "name": "Spearow",
+	"cost": 50,
+	"evolution_name": "Fearow",
+	"evolution_id": "022"
+  },
+  {
+    "id": "023",
+    "name": "Ekans",
+	"cost": 50,
+	"evolution_name": "Arbok",
+	"evolution_id": "024"
+  },
+  {
+    "id": "029",
+    "name": "Nidoran♀",
+	"cost": 25,
+	"evolution_name": "Nidorina",
+	"evolution_id": "030"
+  },
+  {
+    "id": "032",
+    "name": "Nidoran♂",
+	"cost": 25,
+	"evolution_name": "Nidorino",
+	"evolution_id": "033"
+  },
+  {
+    "id": "041",
+    "name": "Zubat",
+	"cost": 50,
+	"evolution_name": "Golbat",
+	"evolution_id": "042"
+  },
+  {
+    "id": 133,
+    "name": "Eevee",
+	"cost": 25,
+	"evolution_name": [
+		"Vaporeon",
+		"Jolteon",
+		"Flareon"
+	],
+	"evolution_id": [
+		"134",
+		"135",
+		"136"
+	]
+  }
+]

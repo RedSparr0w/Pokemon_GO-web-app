@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html manifest="my.appcache" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon" href="include/images/icon-256-transperant.png">
+    <meta name="theme-color" content="#2196f3">
+	<title>Pokemon GO Web App</title>
+	<meta name="author" content="RedSparr0w" />
+	<meta name="description" content="Pokemon GO Web App" />
+	<meta name="robots" content="all" />
+    <link rel="stylesheet" href="include/css/framework7.material.min.css">
+    <link rel="stylesheet" href="include/css/framework7.material.colors.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="include/css/kitchen-sink.css">
+    <link rel="icon" href="include/images/icon-256-transperant.png">
+  </head>
+  <body>
+    <div class="statusbar-overlay"></div>
+    <div class="panel-overlay"></div>
+    <div class="panel panel-left panel-cover">
+      <div class="view navbar-fixed">
+        <div class="pages">
+          <div data-page="panel-left" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">Left Panel</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="content-block">
+                <p>This is a side panel/drawer. You can close it by clicking outsite or on this link: <a href="#" class="close-panel">close me</a>. You can put here anything, even another isolated view like in <a href="#" data-panel="right" class="open-panel">Right Panel</a></p>
+              </div>
+              <div class="content-block-title">Framework7 Kitchen Sink</div>
+              <div class="list-block">
+                <ul>
+                  <li><a href="forms.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Forms</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="list-view.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">List View</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="media-lists.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Media Lists</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="modals.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Modals</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="bars.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Navbars And Toolbars</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="popover.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Popover</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="panels.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Side Panels</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="swipe-delete.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Swipe To Delete</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="swiper.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Swiper Slider</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="tabs.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-media"><i class="icon icon-f7"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Tabs</div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+              <div class="content-block">
+                <p>Long text block goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sem urna, gravida non scelerisque id, fringilla ac velit. Phasellus elementum a ipsum at ornare. Mauris sagittis rhoncus euismod. Integer convallis augue eu lacus ultrices, in dictum elit consequat. Nulla faucibus massa id felis egestas eleifend. Proin consequat dignissim magna ut scelerisque. Vestibulum ac lorem semper, posuere sapien nec, pharetra massa. Nulla a tellus facilisis, sollicitudin quam porta, aliquam lorem. Fusce dignissim eros ac diam molestie, ut ultrices lorem tristique. Ut facilisis augue ac nisi egestas malesuada. Nunc posuere tortor quis eleifend mollis. Aliquam erat volutpat. Donec feugiat elit tellus, nec convallis orci elementum in. Sed urna mi, vestibulum id tempus id, pretium et ante. Pellentesque eget sollicitudin ligula. Phasellus pellentesque velit eu porta suscipit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-right panel-reveal">
+      <div class="view view-right">
+        <div class="pages navbar-fixed">
+          <div data-page="panel-right1" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">Right Panel</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="content-block">
+                <p>This is a right side panel. You can close it by clicking outsite or on this link: <a href="#" class="close-panel">close me</a>. You can put here anything, even another isolated view, try it: </p>
+              </div>
+              <div class="list-block">
+                <ul>
+                  <li><a href="panel-right2.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Right panel page 2</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="panel-right3.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Right panel page 3</div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="views">
+      <div class="view view-main">
+        <div class="pages navbar-fixed">
+          <div data-page="index" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">Evolution Calculator</div>
+                <div class="right"><a href="color-themes.html" class="link icon-only"><i class="icon icon-bars"></i></a></div>
+              </div>
+            </div>
+			  <form data-search-list=".virtual-list" class="searchbar searchbar-init">
+				<div class="searchbar-input">
+				  <input type="search" placeholder="Search"/><a href="#" class="searchbar-clear"></a>
+				</div>
+			  </form>
+			  <div class="searchbar-overlay"></div>
+			  <div class="page-content">
+				<div class="content-block">
+				</div>
+				<div class="list-block virtual-list searchbar-found media-list"></div>
+				<div class="list-block searchbar-not-found">
+				  <ul>
+					<li class="item-content">
+					  <div class="item-inner">
+						<div class="item-title">Nothing found</div>
+					  </div>
+					</li>
+				  </ul>
+				</div>
+			  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup evolution-popup">
+      <div class="view navbar-fixed">
+        <div class="pages">
+          <div class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center base_name">Pokemon</div>
+                <div class="right"><a href="#" class="link close-popup">Done</a></div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="content-block" style="text-align:center;">
+				<img id="base_image" src="" style="width:50%;max-width:120px;">
+				<h3 id="base_name"></h3>
+				<p>Cost <span id="cost"></span> Candy Per Evolve</p>
+				<div class="content-block-title">
+					<span style="width:50%;display: inline-block;">Current Amount</span>
+					<span style="width:50%;display: inline-block;">Current Candy</span>
+				</div>
+				<div class="list-block">
+					<ul>
+					  <li>
+						<div class="item-content">
+							<div class="item-input">
+							  <input type="number" pattern="\d*" name="base_amount" placeholder="-" style="text-align:center;"/>
+							</div>
+							<div class="item-input">
+							  <input type="number" pattern="\d*" name="candy" placeholder="-" style="text-align:center;"/>
+							</div>
+						</div>
+					  </li>
+					</ul>
+				</div>
+				<div class="list-block">
+				  <ul>
+					<li class="item-content">
+					  <div class="item-inner">
+						<div class="item-title">To Transfer</div>
+						<div id="base_transfer" class="item-subtitle">0</div>
+					  </div>
+					</li>
+					<li class="item-content">
+					  <div class="item-inner">
+						<div class="item-title">To Evolve</div>
+						<div id="base_evolve" class="item-subtitle">0</div>
+					  </div>
+					</li>
+				  </ul>
+				</div>
+				<div id="evolution_image"></div>
+				<h3 id="evolution_name"></h3>
+				<div class="content-block-title">
+					<span style="width:100%;display: inline-block;">Current Amount</span>
+				</div>
+				<div class="list-block">
+					<ul>
+					  <li>
+						<div class="item-content">
+							<div class="item-input">
+							  <input type="number" pattern="\d*" name="evolution_amount" placeholder="-" style="text-align:center;"/>
+							</div>
+						</div>
+					  </li>
+					</ul>
+				</div>
+				<div class="list-block">
+				  <ul>
+					<li class="item-content">
+					  <div class="item-inner">
+						<div class="item-title">To Transfer</div>
+						<div id="evolution_transfer" class="item-subtitle">0</div>
+					  </div>
+					</li>
+				  </ul>
+				</div>
+				<h2>Once Finished</h2>
+				<div class="list-block">
+				  <ul>
+					<li class="item-content">
+					  <div class="item-inner">
+						<div class="item-title">Candy Remaining</div>
+						<div id="candy_ramaining" class="item-subtitle">0</div>
+					  </div>
+					</li>
+					<li class="item-content">
+					  <div class="item-inner">
+						<div class="item-title"><span class="base_name"></span> Remaining</div>
+						<div id="base_remaining" class="item-subtitle">0</div>
+					  </div>
+					</li>
+					<li class="item-content">
+					  <div class="item-inner">
+						<div class="item-title"><span class="evolution_name"></span> Remaining</div>
+						<div id="evolution_remaining" class="item-subtitle">0</div>
+					  </div>
+					</li>
+					<li class="item-content">
+					  <div class="item-inner">
+						<div class="item-title">XP</div>
+						<div id="xp" class="item-subtitle">0</div>
+					  </div>
+					</li>
+					<li class="item-content">
+					  <div class="item-inner">
+						<div class="item-title">XP w/Lucky Egg</div>
+						<div id="xp_withEgg" class="item-subtitle">0</div>
+					  </div>
+					</li>
+				  </ul>
+				</div>
+				<a href="#" class="button button-fill button-raised close-popup">Close</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="include/js/framework7.min.js"></script>
+    <script type="text/javascript" src="include/js/kitchen-sink.js"></script>
+    <script type="text/javascript" src="include/js/jquery-3.1.0.min.js"></script>
+	<script>
+	evolutionPopup = function(data){
+		//Base Pokemon
+		$(".evolution-popup #base_image").attr("src",data.dataset.img);
+		$(".evolution-popup #base_name,.evolution-popup .base_name").text(data.dataset.name);
+		$(".evolution-popup #cost").text(data.dataset.cost);
+		
+		//Evolution
+		$(".evolution-popup #evolution_name,.evolution-popup .evolution_name").text(data.dataset.evolution_name.replace(/,/g," & "));
+		var images = data.dataset.evolution_id.split(",");var image = "";
+		$.each(images,function(i,v){
+			image += '<img src="include/images/'+v+'.png" style="width:33%;max-width:120px;">';
+		});
+		$(".evolution-popup #evolution_image").html(image);
+	}
+	evolutionCalculate = function() {
+		var numCost = Number($("#cost").html());
+		var numPoke = Number($("[name=base_amount]").val());
+		var numCandy = Number($("[name=candy]").val());
+		var numPokeToTransfer =0;
+		var numToEvolve = 0;
+		var numEvPoke = Number($("[name=evolution_amount]").val());
+		var numEvPokeToTransfer = 0;
+		var numEvPoke = 0;
+		while (numPoke > 0 && Math.floor((numCandy + numEvPoke + numPoke -1) / numCost ) > 0) {
+			if (numCandy >= numCost) {
+				numCandy -= numCost;
+				numPoke -= 1;
+				numToEvolve += 1;
+				numEvPoke += 1;
+			} else if (numEvPoke > 0) {
+				numEvPoke -= 1;
+				numEvPokeToTransfer += 1;
+			} else {
+				numPoke -= 1;
+				numPokeToTransfer += 1;
+			}
+			numCandy += 1;
+		}
+		
+		$('#base_transfer').text(numPokeToTransfer);
+		$('#base_evolve').text(numToEvolve);
+		$('#base_remaining').text(numPoke);
+		$('#candy_ramaining').text(numCandy);
+		$('#evolution_transfer').text(numEvPokeToTransfer);
+		$('#evolution_remaining').text(numEvPoke);
+		$('#xp').text(numToEvolve*500);
+		$('#xp_withegg').text(numToEvolve*1000);
+	}
+	$(".evolution-popup input").on("input",function(){
+		evolutionCalculate();
+	});
+	</script>
+  </body>
+</html>
