@@ -27,7 +27,7 @@ for (i=1;i<152;i++){
 	}
 	var pokemon = {
 		"id":poke.find("td").eq(0).text().replace("#","").replace(/\s/g,""),
-		"name":poke.find("td").eq(2).text().replace(/\s/g,"").replace("Notcurrentlyavailable",""),
+		"name":poke.find("td").eq(2).text().replace(/\s/g,"").replace("Notcurrentlyavailable","").replace("OnlycatchableinAsia",""),
 		"cost":isNaN(Number(poke.find("td").eq(7).text().replace(/\s/g,"").substring(0,3))) ? Number(poke.find("td").eq(7).text().replace(/\s/g,"").substring(0,2)) : Number(poke.find("td").eq(7).text().replace(/\s/g,"").substring(0,3)),
 		"type": types,
 		"hp":Number(poke.find("td").eq(4).text().replace(/\s/g,"")),

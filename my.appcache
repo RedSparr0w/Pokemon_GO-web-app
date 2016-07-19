@@ -5,6 +5,7 @@ CACHE:
 # html files
 index.html
 color-themes.html
+eggs.html
 
 # css files
 include/css/framework7.material.colors.min.css
