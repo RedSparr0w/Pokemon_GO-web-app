@@ -14,7 +14,6 @@
 	<meta name="robots" content="all" />
     <link rel="stylesheet" href="include/css/framework7.material.min.css">
     <link rel="stylesheet" href="include/css/framework7.material.colors.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="include/css/kitchen-sink.css">
     <link rel="icon" href="include/images/icon-256-transperant.png">
   </head>
@@ -209,10 +208,10 @@
 					  <li>
 						<div class="item-content">
 							<div class="item-input">
-							  <input type="number" pattern="\d*" name="base_amount" placeholder="-" style="text-align:center;"/>
+							  <input type="number" pattern="\d*" name="base_amount" placeholder="enter here" style="text-align:center;"/>
 							</div>
 							<div class="item-input">
-							  <input type="number" pattern="\d*" name="candy" placeholder="-" style="text-align:center;"/>
+							  <input type="number" pattern="\d*" name="candy" placeholder="enter here" style="text-align:center;"/>
 							</div>
 						</div>
 					  </li>
@@ -244,7 +243,7 @@
 					  <li>
 						<div class="item-content">
 							<div class="item-input">
-							  <input type="number" pattern="\d*" name="evolution_amount" placeholder="-" style="text-align:center;"/>
+							  <input type="number" pattern="\d*" name="evolution_amount" placeholder="enter here" style="text-align:center;"/>
 							</div>
 						</div>
 					  </li>
@@ -306,6 +305,12 @@
     <script type="text/javascript" src="include/js/kitchen-sink.js"></script>
     <script type="text/javascript" src="include/js/jquery-3.1.0.min.js"></script>
 	<script>
+	scrollToTop = function(){
+		$(".evolution-popup .page-content").scrollTop(0);
+	}
+	$(document).on("input",".close-popup",function(){
+		scrollToTop();
+	});
 	evolutionPopup = function(data){
 		//Base Pokemon
 		$(".evolution-popup #base_image").attr("src",data.dataset.img);
@@ -328,7 +333,6 @@
 		var numToEvolve = 0;
 		var numEvPoke = Number($("[name=evolution_amount]").val());
 		var numEvPokeToTransfer = 0;
-		var numEvPoke = 0;
 		while (numPoke > 0 && Math.floor((numCandy + numEvPoke + numPoke -1) / numCost ) > 0) {
 			if (numCandy >= numCost) {
 				numCandy -= numCost;
@@ -352,11 +356,12 @@
 		$('#evolution_transfer').text(numEvPokeToTransfer);
 		$('#evolution_remaining').text(numEvPoke);
 		$('#xp').text(numToEvolve*500);
-		$('#xp_withegg').text(numToEvolve*1000);
+		$('#xp_withEgg').text(numToEvolve*1000);
 	}
 	$(".evolution-popup input").on("input",function(){
 		evolutionCalculate();
 	});
+	if (clientInformation.onLine) window.applicationCache.update();
 	</script>
   </body>
 </html>

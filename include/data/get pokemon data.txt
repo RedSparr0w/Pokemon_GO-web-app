@@ -1,0 +1,68 @@
+var AllPokemon=[]
+for (i=1;i<152;i++){
+	var poke = $("table tr").eq(i);
+	if (poke.find("td").eq(3).find("img").length > 1){
+		types=[];
+		$.each(poke.find("td").eq(3).find("img"),function(num,v){
+			types.push($(v).attr("src").replace("/pokedex-bw/type/","").replace(".gif",""));
+		});
+	}else{
+		types = poke.find("td").eq(3).find("img").attr("src").replace("/pokedex-bw/type/","").replace(".gif","");
+	}
+	if (poke.find("td").eq(9).find("u").length > 1){
+		attacks=[];
+		$.each(poke.find("td").eq(9).find("u"),function(num,v){
+			attacks.push($(v).text().replace(/\s/g,""));
+		});
+	}else{
+		attacks = poke.find("td").eq(9).find("u").text().replace(/\s/g,"");
+	}
+	if (poke.find("td").eq(10).find("u").length > 1){
+		special_attacks=[];
+		$.each(poke.find("td").eq(10).find("u"),function(num,v){
+			special_attacks.push($(v).text().replace(/\s/g,""));
+		});
+	}else{
+		special_attacks = poke.find("td").eq(10).find("u").text().replace(/\s/g,"");
+	}
+	var pokemon = {
+		"id":poke.find("td").eq(0).text().replace("#","").replace(/\s/g,""),
+		"name":poke.find("td").eq(2).text().replace(/\s/g,"").replace("Notcurrentlyavailable",""),
+		"cost":isNaN(Number(poke.find("td").eq(7).text().replace(/\s/g,"").substring(0,3))) ? Number(poke.find("td").eq(7).text().replace(/\s/g,"").substring(0,2)) : Number(poke.find("td").eq(7).text().replace(/\s/g,"").substring(0,3)),
+		"type": types,
+		"hp":Number(poke.find("td").eq(4).text().replace(/\s/g,"")),
+		"attack":Number(poke.find("td").eq(5).text().replace(/\s/g,"")),
+		"defense":Number(poke.find("td").eq(6).text().replace(/\s/g,"")),
+		"egg":Number(poke.find("td").eq(8).text().replace(/\s/g,"").replace("km","")),
+		"attacks":attacks,
+		"special_attacks":special_attacks
+	}
+	AllPokemon.push(pokemon);
+}
+JSON.stringify(AllPokemon,null,4);
+
+///replace with nothing
+replace: '
+        "cost": null,'
+replace: '
+        "egg": null,'
+//replace 4 spaces with tabs
+
+$.each(AllPokemon,function(i,v){
+	if(v.hasOwnProperty("cost")){
+		v.evolution_name = AllPokemon[i+1].name;
+		v.evolution_id = AllPokemon[i+1].id;
+	}
+})
+
+//add Eevee's evolutions
+		"evolution_name": [
+			"Vaporeon",
+			"Jolteon",
+			"Flareon"
+		],
+		"evolution_id": [
+			"134",
+			"135",
+			"136"
+		]

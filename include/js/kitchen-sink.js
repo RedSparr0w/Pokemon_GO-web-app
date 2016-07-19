@@ -249,46 +249,46 @@ myApp.onPageInit('progressbar', function (page) {
 });
 
 /* ===== Virtual List ===== */
-    var items = [];
-	$$.ajax({
-		url: 'include/data/pokemon_evolutionCalc.json',
-		method: 'GET',
-		dataType: 'json',
-		success: function (data) {
-			// Find matched items
-			for (var i = 0; i < data.length; i++) {
-				items.push(data[i]);
-			}
-			// Create virtual list
-			var virtualList = myApp.virtualList($$(document).find('.virtual-list'), {
-				// Pass array with items
-				items: items,
-				// Custom search function for searchbar
-				searchAll: function (query, items) {
-					query = query.toLowerCase();
-					var found = [];
-					for (var i = 0; i < items.length; i++) {
-						if (items[i].name.toLowerCase().indexOf(query) >= 0 || query.trim() === '') found.push(i);
-					}
-					return found; //return array with mathced indexes
-				},
-				// List item Template7 template
-				template: '<li>' +
-							'<a href="#" data-popup=".evolution-popup" class="item-link item-content open-popup" onclick="evolutionPopup(this)" data-cost="{{cost}}" data-name="{{name}}" data-img="include/images/{{id}}.png" data-evolution_name="{{evolution_name}}" data-evolution_id="{{evolution_id}}">' +
-							  '<div class="item-media"><img src="include/images/{{id}}.png"></div>'+
-							  '<div class="item-inner">' +
-								'<div class="item-title-row">' +
-								  '<div class="item-title">{{name}}</div>' +
-								'</div>' +
-								'<div class="item-subtitle">Cost: {{cost}}</div>' +
-							  '</div>' +
-							'</a>' +
-						  '</li>',
-				// Item height
-				height: 73,
-			});
+var items = [];
+$$.ajax({
+	url: 'include/data/pokemon_evolutionCalc.json',
+	method: 'GET',
+	dataType: 'json',
+	success: function (data) {
+		// Find matched items
+		for (var i = 0; i < data.length; i++) {
+			if (data[i].hasOwnProperty("cost")) items.push(data[i]);
 		}
-	});
+		// Create virtual list
+		var virtualList = myApp.virtualList($$(document).find('.virtual-list'), {
+			// Pass array with items
+			items: items,
+			// Custom search function for searchbar
+			searchAll: function (query, items) {
+				query = query.toLowerCase();
+				var found = [];
+				for (var i = 0; i < items.length; i++) {
+					if (items[i].name.toLowerCase().indexOf(query) >= 0 || query.trim() === '') found.push(i);
+				}
+				return found; //return array with mathced indexes
+			},
+			// List item Template7 template
+			template: '<li>' +
+						'<a href="#" data-popup=".evolution-popup" class="item-link item-content open-popup" onclick="evolutionPopup(this)" data-cost="{{cost}}" data-name="{{name}}" data-img="include/images/{{id}}.png" data-evolution_name="{{evolution_name}}" data-evolution_id="{{evolution_id}}">' +
+						  '<div class="item-media"><img src="include/images/{{id}}.png"></div>'+
+						  '<div class="item-inner">' +
+							'<div class="item-title-row">' +
+							  '<div class="item-title">{{name}}</div>' +
+							'</div>' +
+							'<div class="item-subtitle">Cost: {{cost}}</div>' +
+						  '</div>' +
+						'</a>' +
+					  '</li>',
+			// Item height
+			height: 73,
+		});
+	}
+});
 /* ===== Change statusbar bg when panel opened/closed ===== */
 $$('.panel-left').on('open', function () {
     $$('.statusbar-overlay').addClass('with-panel-left');

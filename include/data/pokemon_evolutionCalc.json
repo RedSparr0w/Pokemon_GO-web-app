@@ -1,101 +1,3002 @@
 [
-  {
-    "id": "001",
-    "name": "Bulbasaur",
-	"cost": 25,
-	"evolution_name": "Ivysaur",
-	"evolution_id": "002"
-  },
-  {
-    "id": "004",
-    "name": "Charmander",
-	"cost": 25,
-	"evolution_name": "Charmeleon",
-	"evolution_id": "005"
-  },
-  {
-    "id": "007",
-    "name": "Squirtle",
-	"cost": 25,
-	"evolution_name": "Wartortle",
-	"evolution_id": "008"
-  },
-  {
-    "id": "010",
-    "name": "Caterpie",
-	"cost": 12,
-	"evolution_name": "Metapod",
-	"evolution_id": "011"
-  },
-  {
-    "id": "013",
-    "name": "Weedle",
-	"cost": 12,
-	"evolution_name": "Kakuna",
-	"evolution_id": "014"
-  },
-  {
-    "id": "016",
-    "name": "Pidgey",
-	"cost": 12,
-	"evolution_name": "Pidgeotto",
-	"evolution_id": "017"
-  },
-  {
-    "id": "019",
-    "name": "Rattata",
-	"cost": 25,
-	"evolution_name": "Raticate",
-	"evolution_id": "020"
-  },
-  {
-    "id": "021",
-    "name": "Spearow",
-	"cost": 50,
-	"evolution_name": "Fearow",
-	"evolution_id": "022"
-  },
-  {
-    "id": "023",
-    "name": "Ekans",
-	"cost": 50,
-	"evolution_name": "Arbok",
-	"evolution_id": "024"
-  },
-  {
-    "id": "029",
-    "name": "Nidoran♀",
-	"cost": 25,
-	"evolution_name": "Nidorina",
-	"evolution_id": "030"
-  },
-  {
-    "id": "032",
-    "name": "Nidoran♂",
-	"cost": 25,
-	"evolution_name": "Nidorino",
-	"evolution_id": "033"
-  },
-  {
-    "id": "041",
-    "name": "Zubat",
-	"cost": 50,
-	"evolution_name": "Golbat",
-	"evolution_id": "042"
-  },
-  {
-    "id": 133,
-    "name": "Eevee",
-	"cost": 25,
-	"evolution_name": [
-		"Vaporeon",
-		"Jolteon",
-		"Flareon"
-	],
-	"evolution_id": [
-		"134",
-		"135",
-		"136"
-	]
-  }
+	{
+		"id": "001",
+		"name": "Bulbasaur",
+		"cost": 25,
+		"type": [
+			"grass",
+			"poison"
+		],
+		"hp": 90,
+		"attack": 126,
+		"defense": 126,
+		"egg": 2,
+		"attacks": [
+			"Tackle",
+			"VineWhip"
+		],
+		"special_attacks": [
+			"SludgeBomb",
+			"SeedBomb",
+			"PowerWhip"
+		],
+		"evolution_name": "Ivysaur",
+		"evolution_id": "002"
+	},
+	{
+		"id": "002",
+		"name": "Ivysaur",
+		"cost": 100,
+		"type": [
+			"grass",
+			"poison"
+		],
+		"hp": 120,
+		"attack": 156,
+		"defense": 158,
+		"attacks": [
+			"RazorLeaf",
+			"VineWhip"
+		],
+		"special_attacks": [
+			"SludgeBomb",
+			"SolarBeam",
+			"PowerWhip"
+		],
+		"evolution_name": "Venusaur",
+		"evolution_id": "003"
+	},
+	{
+		"id": "003",
+		"name": "Venusaur",
+		"type": [
+			"grass",
+			"poison"
+		],
+		"hp": 160,
+		"attack": 198,
+		"defense": 200,
+		"attacks": [
+			"RazorLeaf",
+			"VineWhip"
+		],
+		"special_attacks": [
+			"SludgeBomb",
+			"SolarBeam",
+			"PetalBlizzard"
+		]
+	},
+	{
+		"id": "004",
+		"name": "Charmander",
+		"cost": 25,
+		"type": "fire",
+		"hp": 78,
+		"attack": 128,
+		"defense": 108,
+		"egg": 2,
+		"attacks": [
+			"Scratch",
+			"Ember"
+		],
+		"special_attacks": [
+			"FlameBurst",
+			"Flamethrower",
+			"FlameCharge"
+		],
+		"evolution_name": "Charmeleon",
+		"evolution_id": "005"
+	},
+	{
+		"id": "005",
+		"name": "Charmeleon",
+		"cost": 100,
+		"type": "fire",
+		"hp": 116,
+		"attack": 160,
+		"defense": 140,
+		"attacks": [
+			"Scratch",
+			"Ember"
+		],
+		"special_attacks": [
+			"FlameBurst",
+			"Flamethrower",
+			"FirePunch"
+		],
+		"evolution_name": "Charizard",
+		"evolution_id": "006"
+	},
+	{
+		"id": "006",
+		"name": "Charizard",
+		"type": [
+			"fire",
+			"flying"
+		],
+		"hp": 156,
+		"attack": 212,
+		"defense": 182,
+		"attacks": [
+			"WingAttack",
+			"Ember"
+		],
+		"special_attacks": [
+			"DragonClaw",
+			"Flamethrower",
+			"FireBlast"
+		]
+	},
+	{
+		"id": "007",
+		"name": "Squirtle",
+		"cost": 25,
+		"type": "water",
+		"hp": 88,
+		"attack": 112,
+		"defense": 142,
+		"egg": 2,
+		"attacks": [
+			"Tackle",
+			"Bubble"
+		],
+		"special_attacks": [
+			"AquaJet",
+			"AquaTail",
+			"WaterPulse"
+		],
+		"evolution_name": "Wartortle",
+		"evolution_id": "008"
+	},
+	{
+		"id": "008",
+		"name": "Wartortle",
+		"cost": 100,
+		"type": "water",
+		"hp": 118,
+		"attack": 144,
+		"defense": 176,
+		"attacks": [
+			"Bite",
+			"WaterGun"
+		],
+		"special_attacks": [
+			"AquaJet",
+			"HydroPump",
+			"IceBeam"
+		],
+		"evolution_name": "Blastoise",
+		"evolution_id": "009"
+	},
+	{
+		"id": "009",
+		"name": "Blastoise",
+		"type": "water",
+		"hp": 158,
+		"attack": 186,
+		"defense": 222,
+		"attacks": [
+			"Bite",
+			"WaterGun"
+		],
+		"special_attacks": [
+			"IceBeam",
+			"HydroPump",
+			"FlashCannon"
+		]
+	},
+	{
+		"id": "010",
+		"name": "Caterpie",
+		"cost": 12,
+		"type": "bug",
+		"hp": 90,
+		"attack": 62,
+		"defense": 66,
+		"egg": 2,
+		"attacks": [
+			"Tackle",
+			"BugBite"
+		],
+		"special_attacks": "Struggle",
+		"evolution_name": "Metapod",
+		"evolution_id": "011"
+	},
+	{
+		"id": "011",
+		"name": "Metapod",
+		"cost": 50,
+		"type": "bug",
+		"hp": 100,
+		"attack": 56,
+		"defense": 86,
+		"attacks": [
+			"Tackle",
+			"BugBite"
+		],
+		"special_attacks": "Struggle",
+		"evolution_name": "Butterfree",
+		"evolution_id": "012"
+	},
+	{
+		"id": "012",
+		"name": "Butterfree",
+		"type": [
+			"bug",
+			"flying"
+		],
+		"hp": 120,
+		"attack": 144,
+		"defense": 144,
+		"attacks": [
+			"Confusion",
+			"BugBite"
+		],
+		"special_attacks": [
+			"Psychic",
+			"BugBuzz",
+			"SignalBeam"
+		]
+	},
+	{
+		"id": "013",
+		"name": "Weedle",
+		"cost": 12,
+		"type": [
+			"bug",
+			"poison"
+		],
+		"hp": 80,
+		"attack": 68,
+		"defense": 64,
+		"egg": 2,
+		"attacks": [
+			"BugBite",
+			"PoisonSting"
+		],
+		"special_attacks": "Struggle",
+		"evolution_name": "Kakuna",
+		"evolution_id": "014"
+	},
+	{
+		"id": "014",
+		"name": "Kakuna",
+		"cost": 50,
+		"type": [
+			"bug",
+			"poison"
+		],
+		"hp": 90,
+		"attack": 62,
+		"defense": 82,
+		"attacks": [
+			"BugBite",
+			"PoisonSting"
+		],
+		"special_attacks": "Struggle",
+		"evolution_name": "Beedrill",
+		"evolution_id": "015"
+	},
+	{
+		"id": "015",
+		"name": "Beedrill",
+		"type": [
+			"bug",
+			"poison"
+		],
+		"hp": 130,
+		"attack": 144,
+		"defense": 130,
+		"attacks": [
+			"BugBite",
+			"PoisonJab"
+		],
+		"special_attacks": [
+			"AerialAce",
+			"SludgeBomb",
+			"X-Scissor"
+		]
+	},
+	{
+		"id": "016",
+		"name": "Pidgey",
+		"cost": 12,
+		"type": [
+			"normal",
+			"flying"
+		],
+		"hp": 80,
+		"attack": 94,
+		"defense": 90,
+		"egg": 2,
+		"attacks": [
+			"Tackle",
+			"QuickAttack"
+		],
+		"special_attacks": [
+			"Twister",
+			"AerialAce",
+			"AirCutter"
+		],
+		"evolution_name": "Pidgeotto",
+		"evolution_id": "017"
+	},
+	{
+		"id": "017",
+		"name": "Pidgeotto",
+		"cost": 50,
+		"type": [
+			"normal",
+			"flying"
+		],
+		"hp": 126,
+		"attack": 126,
+		"defense": 122,
+		"attacks": [
+			"WingAttack",
+			"SteelWing"
+		],
+		"special_attacks": [
+			"Twister",
+			"AerialAce",
+			"AirCutter"
+		],
+		"evolution_name": "Pidgeot",
+		"evolution_id": "018"
+	},
+	{
+		"id": "018",
+		"name": "Pidgeot",
+		"type": [
+			"normal",
+			"flying"
+		],
+		"hp": 166,
+		"attack": 170,
+		"defense": 166,
+		"attacks": [
+			"WingAttack",
+			"SteelWing"
+		],
+		"special_attacks": [
+			"Hurricane",
+			"AerialAce",
+			"AirCutter"
+		]
+	},
+	{
+		"id": "019",
+		"name": "Rattata",
+		"cost": 25,
+		"type": "normal",
+		"hp": 60,
+		"attack": 92,
+		"defense": 86,
+		"egg": 2,
+		"attacks": [
+			"Tackle",
+			"QuickAttack"
+		],
+		"special_attacks": [
+			"Dig",
+			"HyperFang",
+			"BodySlam"
+		],
+		"evolution_name": "Raticate",
+		"evolution_id": "020"
+	},
+	{
+		"id": "020",
+		"name": "Raticate",
+		"type": "normal",
+		"hp": 110,
+		"attack": 146,
+		"defense": 150,
+		"attacks": [
+			"Bite",
+			"QuickAttack"
+		],
+		"special_attacks": [
+			"Dig",
+			"HyperFang",
+			"HyperBeam"
+		]
+	},
+	{
+		"id": "021",
+		"name": "Spearow",
+		"cost": 50,
+		"type": [
+			"normal",
+			"flying"
+		],
+		"hp": 80,
+		"attack": 102,
+		"defense": 78,
+		"egg": 2,
+		"attacks": [
+			"QuickAttack",
+			"Peck"
+		],
+		"special_attacks": [
+			"AerialAce",
+			"Twister",
+			"DrillPeck"
+		],
+		"evolution_name": "Fearow",
+		"evolution_id": "022"
+	},
+	{
+		"id": "022",
+		"name": "Fearow",
+		"type": [
+			"normal",
+			"flying"
+		],
+		"hp": 130,
+		"attack": 168,
+		"defense": 146,
+		"attacks": [
+			"SteelWing",
+			"Peck"
+		],
+		"special_attacks": [
+			"AerialAce",
+			"Twister",
+			"DrillRun"
+		]
+	},
+	{
+		"id": "023",
+		"name": "Ekans",
+		"cost": 50,
+		"type": "poison",
+		"hp": 70,
+		"attack": 112,
+		"defense": 112,
+		"egg": 5,
+		"attacks": [
+			"Acid",
+			"PoisonSting"
+		],
+		"special_attacks": [
+			"GunkShot",
+			"SludgeBomb",
+			"Wrap"
+		],
+		"evolution_name": "Arbok",
+		"evolution_id": "024"
+	},
+	{
+		"id": "024",
+		"name": "Arbok",
+		"type": "poison",
+		"hp": 120,
+		"attack": 166,
+		"defense": 166,
+		"attacks": [
+			"Acid",
+			"Bite"
+		],
+		"special_attacks": [
+			"GunkShot",
+			"SludgeWave",
+			"DarkPulse"
+		]
+	},
+	{
+		"id": "025",
+		"name": "Pikachu",
+		"cost": 50,
+		"type": "electric",
+		"hp": 70,
+		"attack": 124,
+		"defense": 108,
+		"egg": 2,
+		"attacks": [
+			"ThunderShock",
+			"QuickAttack"
+		],
+		"special_attacks": [
+			"Thunderbolt",
+			"Discharge",
+			"Thunder"
+		],
+		"evolution_name": "Raichu",
+		"evolution_id": "026"
+	},
+	{
+		"id": "026",
+		"name": "Raichu",
+		"type": "electric",
+		"hp": 120,
+		"attack": 200,
+		"defense": 154,
+		"attacks": [
+			"ThunderShock",
+			"Spark"
+		],
+		"special_attacks": [
+			"BrickBreak",
+			"ThunderPunch",
+			"Thunder"
+		]
+	},
+	{
+		"id": "027",
+		"name": "Sandshrew",
+		"cost": 50,
+		"type": "ground",
+		"hp": 100,
+		"attack": 90,
+		"defense": 114,
+		"egg": 5,
+		"attacks": [
+			"Scratch",
+			"MudShot"
+		],
+		"special_attacks": [
+			"Dig",
+			"RockSlide",
+			"RockTomb"
+		],
+		"evolution_name": "Sandslash",
+		"evolution_id": "028"
+	},
+	{
+		"id": "028",
+		"name": "Sandslash",
+		"type": "ground",
+		"hp": 150,
+		"attack": 150,
+		"defense": 172,
+		"attacks": [
+			"MetalClaw",
+			"MudShot"
+		],
+		"special_attacks": [
+			"RockTomb",
+			"Bulldoze",
+			"Earthquake"
+		]
+	},
+	{
+		"id": "029",
+		"name": "Nidoran♀",
+		"cost": 25,
+		"type": "poison",
+		"hp": 110,
+		"attack": 100,
+		"defense": 104,
+		"egg": 5,
+		"attacks": [
+			"PoisonSting",
+			"Bite"
+		],
+		"special_attacks": [
+			"PoisonFang",
+			"SludgeBomb",
+			"BodySlam"
+		],
+		"evolution_name": "Nidorina",
+		"evolution_id": "030"
+	},
+	{
+		"id": "030",
+		"name": "Nidorina",
+		"cost": 100,
+		"type": "poison",
+		"hp": 140,
+		"attack": 132,
+		"defense": 136,
+		"attacks": [
+			"PoisonSting",
+			"Bite"
+		],
+		"special_attacks": [
+			"PoisonFang",
+			"SludgeBomb",
+			"Dig"
+		],
+		"evolution_name": "Nidoqueen",
+		"evolution_id": "031"
+	},
+	{
+		"id": "031",
+		"name": "Nidoqueen",
+		"type": [
+			"poison",
+			"ground"
+		],
+		"hp": 180,
+		"attack": 184,
+		"defense": 190,
+		"attacks": [
+			"PoisonJab",
+			"Bite"
+		],
+		"special_attacks": [
+			"StoneEdge",
+			"SludgeWave",
+			"Earthquake"
+		]
+	},
+	{
+		"id": "032",
+		"name": "Nidoran♂",
+		"cost": 25,
+		"type": "poison",
+		"hp": 92,
+		"attack": 110,
+		"defense": 94,
+		"egg": 5,
+		"attacks": [
+			"PoisonSting",
+			"Peck"
+		],
+		"special_attacks": [
+			"HornAttack",
+			"BodySlam",
+			"SludgeBomb"
+		],
+		"evolution_name": "Nidorino",
+		"evolution_id": "033"
+	},
+	{
+		"id": "033",
+		"name": "Nidorino",
+		"cost": 100,
+		"type": "poison",
+		"hp": 122,
+		"attack": 142,
+		"defense": 128,
+		"attacks": [
+			"PoisonJab",
+			"Bite"
+		],
+		"special_attacks": [
+			"HornAttack",
+			"Dig",
+			"SludgeBomb"
+		],
+		"evolution_name": "Nidoking",
+		"evolution_id": "034"
+	},
+	{
+		"id": "034",
+		"name": "Nidoking",
+		"type": [
+			"poison",
+			"ground"
+		],
+		"hp": 162,
+		"attack": 204,
+		"defense": 170,
+		"attacks": [
+			"PoisonJab",
+			"FuryCutter"
+		],
+		"special_attacks": [
+			"Megahorn",
+			"Earthquake",
+			"SludgeWave"
+		]
+	},
+	{
+		"id": "035",
+		"name": "Clefairy",
+		"cost": 50,
+		"type": "fairy",
+		"hp": 140,
+		"attack": 116,
+		"defense": 124,
+		"egg": 2,
+		"attacks": [
+			"ZenHeadbutt",
+			"Pound"
+		],
+		"special_attacks": [
+			"BodySlam",
+			"DisarmingVoice",
+			"Moonblast"
+		],
+		"evolution_name": "Clefable",
+		"evolution_id": "036"
+	},
+	{
+		"id": "036",
+		"name": "Clefable",
+		"type": "fairy",
+		"hp": 190,
+		"attack": 178,
+		"defense": 178,
+		"attacks": [
+			"ZenHeadbutt",
+			"Pound"
+		],
+		"special_attacks": [
+			"Psychic",
+			"DazzlingGleam",
+			"Moonblast"
+		]
+	},
+	{
+		"id": "037",
+		"name": "Vulpix",
+		"cost": 50,
+		"type": "fire",
+		"hp": 76,
+		"attack": 106,
+		"defense": 118,
+		"egg": 5,
+		"attacks": [
+			"QuickAttack",
+			"Ember"
+		],
+		"special_attacks": [
+			"Flamethrower",
+			"BodySlam",
+			"FlameCharge"
+		],
+		"evolution_name": "Ninetales",
+		"evolution_id": "038"
+	},
+	{
+		"id": "038",
+		"name": "Ninetales",
+		"type": "fire",
+		"hp": 146,
+		"attack": 176,
+		"defense": 194,
+		"attacks": [
+			"FeintAttack",
+			"Ember"
+		],
+		"special_attacks": [
+			"HeatWave",
+			"FireBlast",
+			"Flamethrower"
+		]
+	},
+	{
+		"id": "039",
+		"name": "Jigglypuff",
+		"cost": 50,
+		"type": [
+			"normal",
+			"fairy"
+		],
+		"hp": 230,
+		"attack": 98,
+		"defense": 54,
+		"egg": 2,
+		"attacks": [
+			"FeintAttack",
+			"Pound"
+		],
+		"special_attacks": [
+			"DisarmingVoice",
+			"BodySlam",
+			"PlayRough"
+		],
+		"evolution_name": "Wigglytuff",
+		"evolution_id": "040"
+	},
+	{
+		"id": "040",
+		"name": "Wigglytuff",
+		"type": [
+			"normal",
+			"fairy"
+		],
+		"hp": 280,
+		"attack": 168,
+		"defense": 108,
+		"attacks": [
+			"FeintAttack",
+			"Pound"
+		],
+		"special_attacks": [
+			"DazzlingGleam",
+			"HyperBeam",
+			"PlayRough"
+		]
+	},
+	{
+		"id": "041",
+		"name": "Zubat",
+		"cost": 50,
+		"type": [
+			"poison",
+			"flying"
+		],
+		"hp": 80,
+		"attack": 88,
+		"defense": 90,
+		"egg": 2,
+		"attacks": [
+			"Bite",
+			"QuickAttack"
+		],
+		"special_attacks": [
+			"SludgeBomb",
+			"PoisonFang",
+			"AirCutter"
+		],
+		"evolution_name": "Golbat",
+		"evolution_id": "042"
+	},
+	{
+		"id": "042",
+		"name": "Golbat",
+		"type": [
+			"poison",
+			"flying"
+		],
+		"hp": 150,
+		"attack": 164,
+		"defense": 164,
+		"attacks": [
+			"Bite",
+			"WingAttack"
+		],
+		"special_attacks": [
+			"OminousWind",
+			"PoisonFang",
+			"AirCutter"
+		]
+	},
+	{
+		"id": "043",
+		"name": "Oddish",
+		"cost": 25,
+		"type": [
+			"grass",
+			"poison"
+		],
+		"hp": 90,
+		"attack": 134,
+		"defense": 130,
+		"egg": 5,
+		"attacks": [
+			"RazorLeaf",
+			"Acid"
+		],
+		"special_attacks": [
+			"Moonblast",
+			"SeedBomb",
+			"SludgeBomb"
+		],
+		"evolution_name": "Gloom",
+		"evolution_id": "044"
+	},
+	{
+		"id": "044",
+		"name": "Gloom",
+		"cost": 100,
+		"type": [
+			"grass",
+			"poison"
+		],
+		"hp": 120,
+		"attack": 162,
+		"defense": 158,
+		"attacks": [
+			"RazorLeaf",
+			"Acid"
+		],
+		"special_attacks": [
+			"Moonblast",
+			"PetalBlizzard",
+			"SludgeBomb"
+		],
+		"evolution_name": "Vileplume",
+		"evolution_id": "045"
+	},
+	{
+		"id": "045",
+		"name": "Vileplume",
+		"type": [
+			"grass",
+			"poison"
+		],
+		"hp": 150,
+		"attack": 202,
+		"defense": 190,
+		"attacks": [
+			"RazorLeaf",
+			"Acid"
+		],
+		"special_attacks": [
+			"Moonblast",
+			"PetalBlizzard",
+			"SolarBeam"
+		]
+	},
+	{
+		"id": "046",
+		"name": "Paras",
+		"cost": 50,
+		"type": [
+			"bug",
+			"grass"
+		],
+		"hp": 70,
+		"attack": 122,
+		"defense": 120,
+		"egg": 5,
+		"attacks": [
+			"BugBite",
+			"Scratch"
+		],
+		"special_attacks": [
+			"SeedBomb",
+			"X-Scissor",
+			"CrossPoison"
+		],
+		"evolution_name": "Parasect",
+		"evolution_id": "047"
+	},
+	{
+		"id": "047",
+		"name": "Parasect",
+		"type": [
+			"bug",
+			"grass"
+		],
+		"hp": 120,
+		"attack": 162,
+		"defense": 170,
+		"attacks": [
+			"BugBite",
+			"FuryCutter"
+		],
+		"special_attacks": [
+			"SolarBeam",
+			"X-Scissor",
+			"CrossPoison"
+		]
+	},
+	{
+		"id": "048",
+		"name": "Venonat",
+		"cost": 50,
+		"type": [
+			"bug",
+			"poison"
+		],
+		"hp": 120,
+		"attack": 108,
+		"defense": 118,
+		"egg": 5,
+		"attacks": [
+			"Confusion",
+			"BugBite"
+		],
+		"special_attacks": [
+			"SignalBeam",
+			"PoisonFang",
+			"Psybeam"
+		],
+		"evolution_name": "Venomoth",
+		"evolution_id": "049"
+	},
+	{
+		"id": "049",
+		"name": "Venomoth",
+		"type": [
+			"bug",
+			"poison"
+		],
+		"hp": 140,
+		"attack": 172,
+		"defense": 154,
+		"attacks": [
+			"Confusion",
+			"BugBite"
+		],
+		"special_attacks": [
+			"BugBuzz",
+			"PoisonFang",
+			"Psychic"
+		]
+	},
+	{
+		"id": "050",
+		"name": "Diglett",
+		"cost": 50,
+		"type": "ground",
+		"hp": 20,
+		"attack": 108,
+		"defense": 86,
+		"egg": 5,
+		"attacks": [
+			"Scratch",
+			"MudShot"
+		],
+		"special_attacks": [
+			"RockTomb",
+			"Dig",
+			"MudBomb"
+		],
+		"evolution_name": "Dugtrio",
+		"evolution_id": "051"
+	},
+	{
+		"id": "051",
+		"name": "Dugtrio",
+		"type": "ground",
+		"hp": 70,
+		"attack": 148,
+		"defense": 140,
+		"attacks": [
+			"SuckerPunch",
+			"MudShot"
+		],
+		"special_attacks": [
+			"StoneEdge",
+			"Earthquake",
+			"MudBomb"
+		]
+	},
+	{
+		"id": "052",
+		"name": "Meowth",
+		"cost": 50,
+		"type": "normal",
+		"hp": 80,
+		"attack": 104,
+		"defense": 94,
+		"egg": 5,
+		"attacks": [
+			"Scratch",
+			"Bite"
+		],
+		"special_attacks": [
+			"DarkPulse",
+			"NightSlash",
+			"BodySlam"
+		],
+		"evolution_name": "Persian",
+		"evolution_id": "053"
+	},
+	{
+		"id": "053",
+		"name": "Persian",
+		"type": "normal",
+		"hp": 130,
+		"attack": 156,
+		"defense": 146,
+		"attacks": [
+			"Scratch",
+			"FeintAttack"
+		],
+		"special_attacks": [
+			"PlayRough",
+			"PowerGem",
+			"NightSlash"
+		]
+	},
+	{
+		"id": "054",
+		"name": "Psyduck",
+		"cost": 50,
+		"type": "water",
+		"hp": 100,
+		"attack": 132,
+		"defense": 112,
+		"egg": 5,
+		"attacks": [
+			"ZenHeadbutt",
+			"WaterGun"
+		],
+		"special_attacks": [
+			"AquaTail",
+			"CrossChop",
+			"Psybeam"
+		],
+		"evolution_name": "Golduck",
+		"evolution_id": "055"
+	},
+	{
+		"id": "055",
+		"name": "Golduck",
+		"type": "water",
+		"hp": 160,
+		"attack": 194,
+		"defense": 176,
+		"attacks": [
+			"Confusion",
+			"WaterGun"
+		],
+		"special_attacks": [
+			"HydroPump",
+			"IceBeam",
+			"Psychic"
+		]
+	},
+	{
+		"id": "056",
+		"name": "Mankey",
+		"cost": 50,
+		"type": "fighting",
+		"hp": 80,
+		"attack": 112,
+		"defense": 96,
+		"egg": 5,
+		"attacks": [
+			"KarateChop",
+			"Scratch"
+		],
+		"special_attacks": [
+			"BrickBreak",
+			"CrossChop",
+			"LowSweep"
+		],
+		"evolution_name": "Primeape",
+		"evolution_id": "057"
+	},
+	{
+		"id": "057",
+		"name": "Primeape",
+		"type": "fighting",
+		"hp": 130,
+		"attack": 178,
+		"defense": 150,
+		"attacks": [
+			"KarateChop",
+			"LowKick"
+		],
+		"special_attacks": [
+			"NightSlash",
+			"CrossChop",
+			"LowSweep"
+		]
+	},
+	{
+		"id": "058",
+		"name": "Growlithe",
+		"cost": 50,
+		"type": "fire",
+		"hp": 110,
+		"attack": 156,
+		"defense": 110,
+		"egg": 5,
+		"attacks": [
+			"Ember",
+			"Bite"
+		],
+		"special_attacks": [
+			"FlameWheel",
+			"BodySlam",
+			"Flamethrower"
+		],
+		"evolution_name": "Arcanine",
+		"evolution_id": "059"
+	},
+	{
+		"id": "059",
+		"name": "Arcanine",
+		"type": "fire",
+		"hp": 180,
+		"attack": 230,
+		"defense": 180,
+		"attacks": [
+			"FireFang",
+			"Bite"
+		],
+		"special_attacks": [
+			"FireBlast",
+			"Bulldoze",
+			"Flamethrower"
+		]
+	},
+	{
+		"id": "060",
+		"name": "Poliwag",
+		"cost": 25,
+		"type": "water",
+		"hp": 80,
+		"attack": 108,
+		"defense": 98,
+		"egg": 5,
+		"attacks": [
+			"Bubble",
+			"MudShot"
+		],
+		"special_attacks": [
+			"BodySlam",
+			"BubbleBeam",
+			"MudBomb"
+		],
+		"evolution_name": "Poliwhirl",
+		"evolution_id": "061"
+	},
+	{
+		"id": "061",
+		"name": "Poliwhirl",
+		"cost": 100,
+		"type": "water",
+		"hp": 130,
+		"attack": 132,
+		"defense": 132,
+		"attacks": [
+			"Bubble",
+			"MudShot"
+		],
+		"special_attacks": [
+			"Scald",
+			"BubbleBeam",
+			"MudBomb"
+		],
+		"evolution_name": "Poliwrath",
+		"evolution_id": "062"
+	},
+	{
+		"id": "062",
+		"name": "Poliwrath",
+		"type": [
+			"water",
+			"fighting"
+		],
+		"hp": 180,
+		"attack": 180,
+		"defense": 202,
+		"attacks": [
+			"Bubble",
+			"MudShot"
+		],
+		"special_attacks": [
+			"IcePunch",
+			"HydroPump",
+			"Submission"
+		]
+	},
+	{
+		"id": "063",
+		"name": "Abra",
+		"cost": 25,
+		"type": "psychic",
+		"hp": 50,
+		"attack": 110,
+		"defense": 76,
+		"egg": 5,
+		"attacks": "ZenHeadbutt",
+		"special_attacks": [
+			"ShadowBall",
+			"SignalBeam",
+			"Psyshock"
+		],
+		"evolution_name": "Kadabra",
+		"evolution_id": "064"
+	},
+	{
+		"id": "064",
+		"name": "Kadabra",
+		"cost": 100,
+		"type": "psychic",
+		"hp": 80,
+		"attack": 150,
+		"defense": 112,
+		"attacks": [
+			"Confusion",
+			"PsychoCut"
+		],
+		"special_attacks": [
+			"ShadowBall",
+			"DazzlingGleam",
+			"Psybeam"
+		],
+		"evolution_name": "Alakazam",
+		"evolution_id": "065"
+	},
+	{
+		"id": "065",
+		"name": "Alakazam",
+		"type": "psychic",
+		"hp": 110,
+		"attack": 186,
+		"defense": 152,
+		"attacks": [
+			"Confusion",
+			"PsychoCut"
+		],
+		"special_attacks": [
+			"ShadowBall",
+			"DazzlingGleam",
+			"Psychic"
+		]
+	},
+	{
+		"id": "066",
+		"name": "Machop",
+		"cost": 25,
+		"type": "fighting",
+		"hp": 140,
+		"attack": 118,
+		"defense": 96,
+		"egg": 5,
+		"attacks": [
+			"LowKick",
+			"KarateChop"
+		],
+		"special_attacks": [
+			"BrickBreak",
+			"CrossChop",
+			"LowSweep"
+		],
+		"evolution_name": "Machoke",
+		"evolution_id": "067"
+	},
+	{
+		"id": "067",
+		"name": "Machoke",
+		"cost": 100,
+		"type": "fighting",
+		"hp": 160,
+		"attack": 154,
+		"defense": 144,
+		"attacks": [
+			"LowKick",
+			"KarateChop"
+		],
+		"special_attacks": [
+			"BrickBreak",
+			"CrossChop",
+			"Submission"
+		],
+		"evolution_name": "Machamp",
+		"evolution_id": "068"
+	},
+	{
+		"id": "068",
+		"name": "Machamp",
+		"type": "fighting",
+		"hp": 180,
+		"attack": 198,
+		"defense": 180,
+		"attacks": [
+			"BulletPunch",
+			"KarateChop"
+		],
+		"special_attacks": [
+			"StoneEdge",
+			"CrossChop",
+			"Submission"
+		]
+	},
+	{
+		"id": "069",
+		"name": "Bellsprout",
+		"cost": 25,
+		"type": [
+			"grass",
+			"poison"
+		],
+		"hp": 100,
+		"attack": 158,
+		"defense": 78,
+		"egg": 5,
+		"attacks": [
+			"Acid",
+			"VineWhip"
+		],
+		"special_attacks": [
+			"SludgeBomb",
+			"PowerWhip",
+			"Wrap"
+		],
+		"evolution_name": "Weepinbell",
+		"evolution_id": "070"
+	},
+	{
+		"id": "070",
+		"name": "Weepinbell",
+		"cost": 100,
+		"type": [
+			"grass",
+			"poison"
+		],
+		"hp": 130,
+		"attack": 190,
+		"defense": 110,
+		"attacks": [
+			"Acid",
+			"RazorLeaf"
+		],
+		"special_attacks": [
+			"SludgeBomb",
+			"PowerWhip",
+			"SeedBomb"
+		],
+		"evolution_name": "Victreebel",
+		"evolution_id": "071"
+	},
+	{
+		"id": "071",
+		"name": "Victreebel",
+		"type": [
+			"grass",
+			"poison"
+		],
+		"hp": 160,
+		"attack": 222,
+		"defense": 152,
+		"attacks": [
+			"Acid",
+			"RazorLeaf"
+		],
+		"special_attacks": [
+			"SludgeBomb",
+			"LeafBlade",
+			"SolarBeam"
+		]
+	},
+	{
+		"id": "072",
+		"name": "Tentacool",
+		"cost": 50,
+		"type": [
+			"water",
+			"poison"
+		],
+		"hp": 80,
+		"attack": 106,
+		"defense": 136,
+		"egg": 5,
+		"attacks": [
+			"Bubble",
+			"PoisonSting"
+		],
+		"special_attacks": [
+			"BubbleBeam",
+			"WaterPulse",
+			"Wrap"
+		],
+		"evolution_name": "Tentacruel",
+		"evolution_id": "073"
+	},
+	{
+		"id": "073",
+		"name": "Tentacruel",
+		"type": [
+			"water",
+			"poison"
+		],
+		"hp": 160,
+		"attack": 170,
+		"defense": 196,
+		"attacks": [
+			"Acid",
+			"PoisonJab"
+		],
+		"special_attacks": [
+			"Blizzard",
+			"HydroPump",
+			"SludgeWave"
+		]
+	},
+	{
+		"id": "074",
+		"name": "Geodude",
+		"cost": 25,
+		"type": [
+			"rock",
+			"ground"
+		],
+		"hp": 80,
+		"attack": 106,
+		"defense": 118,
+		"egg": 2,
+		"attacks": [
+			"RockThrow",
+			"Tackle"
+		],
+		"special_attacks": [
+			"RockSlide",
+			"Dig",
+			"RockTomb"
+		],
+		"evolution_name": "Graveler",
+		"evolution_id": "075"
+	},
+	{
+		"id": "075",
+		"name": "Graveler",
+		"cost": 100,
+		"type": [
+			"rock",
+			"ground"
+		],
+		"hp": 110,
+		"attack": 142,
+		"defense": 156,
+		"attacks": [
+			"RockThrow",
+			"MudShot"
+		],
+		"special_attacks": [
+			"RockSlide",
+			"Dig",
+			"StoneEdge"
+		],
+		"evolution_name": "Golem",
+		"evolution_id": "076"
+	},
+	{
+		"id": "076",
+		"name": "Golem",
+		"type": [
+			"rock",
+			"ground"
+		],
+		"hp": 160,
+		"attack": 176,
+		"defense": 198,
+		"attacks": [
+			"RockThrow",
+			"MudShot"
+		],
+		"special_attacks": [
+			"AncientPower",
+			"Earthquake",
+			"StoneEdge"
+		]
+	},
+	{
+		"id": "077",
+		"name": "Ponyta",
+		"cost": 50,
+		"type": "fire",
+		"hp": 100,
+		"attack": 168,
+		"defense": 138,
+		"egg": 5,
+		"attacks": [
+			"Tackle",
+			"Ember"
+		],
+		"special_attacks": [
+			"FlameWheel",
+			"FireBlast",
+			"FlameCharge"
+		],
+		"evolution_name": "Rapidash",
+		"evolution_id": "078"
+	},
+	{
+		"id": "078",
+		"name": "Rapidash",
+		"type": "fire",
+		"hp": 130,
+		"attack": 200,
+		"defense": 170,
+		"attacks": [
+			"LowKick",
+			"Ember"
+		],
+		"special_attacks": [
+			"HeatWave",
+			"FireBlast",
+			"DrillRun"
+		]
+	},
+	{
+		"id": "079",
+		"name": "Slowpoke",
+		"cost": 50,
+		"type": [
+			"water",
+			"psychic"
+		],
+		"hp": 180,
+		"attack": 110,
+		"defense": 110,
+		"egg": 5,
+		"attacks": [
+			"WaterGun",
+			"Confusion"
+		],
+		"special_attacks": [
+			"Psychic",
+			"WaterPulse",
+			"Psyshock"
+		],
+		"evolution_name": "Slowbro",
+		"evolution_id": "080"
+	},
+	{
+		"id": "080",
+		"name": "Slowbro",
+		"type": [
+			"water",
+			"psychic"
+		],
+		"hp": 190,
+		"attack": 184,
+		"defense": 198,
+		"attacks": [
+			"WaterGun",
+			"Confusion"
+		],
+		"special_attacks": [
+			"Psychic",
+			"WaterPulse",
+			"IceBeam"
+		]
+	},
+	{
+		"id": "081",
+		"name": "Magnemite",
+		"cost": 50,
+		"type": [
+			"electric",
+			"steel"
+		],
+		"hp": 50,
+		"attack": 128,
+		"defense": 138,
+		"egg": 5,
+		"attacks": [
+			"Spark",
+			"ThunderShock"
+		],
+		"special_attacks": [
+			"MagnetBomb",
+			"Discharge",
+			"Thunderbolt"
+		],
+		"evolution_name": "Magneton",
+		"evolution_id": "082"
+	},
+	{
+		"id": "082",
+		"name": "Magneton",
+		"type": [
+			"electric",
+			"steel"
+		],
+		"hp": 100,
+		"attack": 186,
+		"defense": 180,
+		"attacks": [
+			"Spark",
+			"ThunderShock"
+		],
+		"special_attacks": [
+			"MagnetBomb",
+			"Discharge",
+			"FlashCannon"
+		]
+	},
+	{
+		"id": "083",
+		"name": "Farfetch'dOnlycatchableinAsia",
+		"type": [
+			"normal",
+			"flying"
+		],
+		"hp": 104,
+		"attack": 138,
+		"defense": 132,
+		"egg": 5,
+		"attacks": [
+			"FuryCutter",
+			"Cut"
+		],
+		"special_attacks": [
+			"AirCutter",
+			"AerialAce",
+			"LeafBlade"
+		]
+	},
+	{
+		"id": "084",
+		"name": "Doduo",
+		"cost": 50,
+		"type": [
+			"normal",
+			"flying"
+		],
+		"hp": 70,
+		"attack": 126,
+		"defense": 96,
+		"egg": 5,
+		"attacks": [
+			"Peck",
+			"QuickAttack"
+		],
+		"special_attacks": [
+			"Swift",
+			"AerialAce",
+			"DrillPeck"
+		],
+		"evolution_name": "Dodrio",
+		"evolution_id": "085"
+	},
+	{
+		"id": "085",
+		"name": "Dodrio",
+		"type": [
+			"normal",
+			"flying"
+		],
+		"hp": 120,
+		"attack": 182,
+		"defense": 150,
+		"attacks": [
+			"SteelWing",
+			"FeintAttack"
+		],
+		"special_attacks": [
+			"DrillPeck",
+			"AerialAce",
+			"AirCutter"
+		]
+	},
+	{
+		"id": "086",
+		"name": "Seel",
+		"cost": 50,
+		"type": "water",
+		"hp": 130,
+		"attack": 104,
+		"defense": 138,
+		"egg": 5,
+		"attacks": [
+			"WaterGun",
+			"IceShard"
+		],
+		"special_attacks": [
+			"AquaJet",
+			"IcyWind",
+			"AquaTail"
+		],
+		"evolution_name": "Dewgong",
+		"evolution_id": "087"
+	},
+	{
+		"id": "087",
+		"name": "Dewgong",
+		"type": [
+			"water",
+			"ice"
+		],
+		"hp": 180,
+		"attack": 156,
+		"defense": 192,
+		"attacks": [
+			"FrostBreath",
+			"IceShard"
+		],
+		"special_attacks": [
+			"AquaJet",
+			"IcyWind",
+			"Blizzard"
+		]
+	},
+	{
+		"id": "088",
+		"name": "Grimer",
+		"cost": 50,
+		"type": "poison",
+		"hp": 160,
+		"attack": 124,
+		"defense": 110,
+		"egg": 5,
+		"attacks": [
+			"MudSlap",
+			"Acid"
+		],
+		"special_attacks": [
+			"Sludge",
+			"SludgeBomb",
+			"MudBomb"
+		],
+		"evolution_name": "Muk",
+		"evolution_id": "089"
+	},
+	{
+		"id": "089",
+		"name": "Muk",
+		"type": "poison",
+		"hp": 210,
+		"attack": 180,
+		"defense": 188,
+		"attacks": [
+			"PoisonJab",
+			"Acid"
+		],
+		"special_attacks": [
+			"SludgeWave",
+			"SludgeBomb",
+			"DarkPulse"
+		]
+	},
+	{
+		"id": "090",
+		"name": "Shellder",
+		"cost": 50,
+		"type": "water",
+		"hp": 60,
+		"attack": 120,
+		"defense": 112,
+		"egg": 5,
+		"attacks": [
+			"IceShard",
+			"Tackle"
+		],
+		"special_attacks": [
+			"IcyWind",
+			"WaterPulse",
+			"BubbleBeam"
+		],
+		"evolution_name": "Cloyster",
+		"evolution_id": "091"
+	},
+	{
+		"id": "091",
+		"name": "Cloyster",
+		"type": [
+			"water",
+			"ice"
+		],
+		"hp": 100,
+		"attack": 196,
+		"defense": 196,
+		"attacks": [
+			"IceShard",
+			"FrostBreath"
+		],
+		"special_attacks": [
+			"IcyWind",
+			"Blizzard",
+			"HydroPump"
+		]
+	},
+	{
+		"id": "092",
+		"name": "Gastly",
+		"cost": 25,
+		"type": [
+			"ghost",
+			"poison"
+		],
+		"hp": 60,
+		"attack": 136,
+		"defense": 82,
+		"egg": 5,
+		"attacks": [
+			"Lick",
+			"SuckerPunch"
+		],
+		"special_attacks": [
+			"DarkPulse",
+			"SludgeBomb",
+			"OminousWind"
+		],
+		"evolution_name": "Haunter",
+		"evolution_id": "093"
+	},
+	{
+		"id": "093",
+		"name": "Haunter",
+		"cost": 100,
+		"type": [
+			"ghost",
+			"poison"
+		],
+		"hp": 90,
+		"attack": 172,
+		"defense": 118,
+		"attacks": [
+			"Lick",
+			"ShadowClaw"
+		],
+		"special_attacks": [
+			"DarkPulse",
+			"SludgeBomb",
+			"ShadowBall"
+		],
+		"evolution_name": "Gengar",
+		"evolution_id": "094"
+	},
+	{
+		"id": "094",
+		"name": "Gengar",
+		"type": [
+			"ghost",
+			"poison"
+		],
+		"hp": 120,
+		"attack": 204,
+		"defense": 156,
+		"attacks": [
+			"ShadowClaw",
+			"SuckerPunch"
+		],
+		"special_attacks": [
+			"DarkPulse",
+			"SludgeWave",
+			"ShadowBall"
+		]
+	},
+	{
+		"id": "095",
+		"name": "Onix",
+		"type": [
+			"rock",
+			"ground"
+		],
+		"hp": 70,
+		"attack": 90,
+		"defense": 186,
+		"egg": 10,
+		"attacks": [
+			"RockThrow",
+			"Tackle"
+		],
+		"special_attacks": [
+			"RockSlide",
+			"StoneEdge",
+			"IronHead"
+		]
+	},
+	{
+		"id": "096",
+		"name": "Drowzee",
+		"cost": 50,
+		"type": "psychic",
+		"hp": 120,
+		"attack": 104,
+		"defense": 140,
+		"egg": 5,
+		"attacks": [
+			"Pound",
+			"Confusion"
+		],
+		"special_attacks": [
+			"Psychic",
+			"Psyshock",
+			"Psybeam"
+		],
+		"evolution_name": "Hypno",
+		"evolution_id": "097"
+	},
+	{
+		"id": "097",
+		"name": "Hypno",
+		"type": "psychic",
+		"hp": 170,
+		"attack": 162,
+		"defense": 196,
+		"attacks": [
+			"ZenHeadbutt",
+			"Confusion"
+		],
+		"special_attacks": [
+			"Psychic",
+			"Psyshock",
+			"ShadowBall"
+		]
+	},
+	{
+		"id": "098",
+		"name": "Krabby",
+		"cost": 50,
+		"type": "water",
+		"hp": 60,
+		"attack": 116,
+		"defense": 110,
+		"egg": 5,
+		"attacks": [
+			"Bubble",
+			"MudShot"
+		],
+		"special_attacks": [
+			"ViceGrip",
+			"WaterPulse",
+			"BubbleBeam"
+		],
+		"evolution_name": "Kingler",
+		"evolution_id": "099"
+	},
+	{
+		"id": "099",
+		"name": "Kingler",
+		"type": "water",
+		"hp": 110,
+		"attack": 178,
+		"defense": 168,
+		"attacks": [
+			"MetalClaw",
+			"MudShot"
+		],
+		"special_attacks": [
+			"ViceGrip",
+			"WaterPulse",
+			"X-Scissor"
+		]
+	},
+	{
+		"id": "100",
+		"name": "Voltorb",
+		"cost": 50,
+		"type": "electric",
+		"hp": 80,
+		"attack": 102,
+		"defense": 124,
+		"egg": 5,
+		"attacks": [
+			"Tackle",
+			"Spark"
+		],
+		"special_attacks": [
+			"Thunderbolt",
+			"Discharge",
+			"SignalBeam"
+		],
+		"evolution_name": "Electrode",
+		"evolution_id": "101"
+	},
+	{
+		"id": "101",
+		"name": "Electrode",
+		"type": "electric",
+		"hp": 120,
+		"attack": 150,
+		"defense": 174,
+		"attacks": [
+			"Tackle",
+			"Spark"
+		],
+		"special_attacks": [
+			"Thunderbolt",
+			"Discharge",
+			"HyperBeam"
+		]
+	},
+	{
+		"id": "102",
+		"name": "Exeggcute",
+		"cost": 50,
+		"type": [
+			"grass",
+			"psychic"
+		],
+		"hp": 120,
+		"attack": 110,
+		"defense": 132,
+		"egg": 5,
+		"attacks": "Confusion",
+		"special_attacks": [
+			"Psychic",
+			"SeedBomb",
+			"AncientPower"
+		],
+		"evolution_name": "Exeggutor",
+		"evolution_id": "103"
+	},
+	{
+		"id": "103",
+		"name": "Exeggutor",
+		"type": [
+			"grass",
+			"psychic"
+		],
+		"hp": 190,
+		"attack": 232,
+		"defense": 164,
+		"attacks": [
+			"Confusion",
+			"ZenHeadbutt"
+		],
+		"special_attacks": [
+			"Psychic",
+			"SeedBomb",
+			"SolarBeam"
+		]
+	},
+	{
+		"id": "104",
+		"name": "Cubone",
+		"cost": 50,
+		"type": "ground",
+		"hp": 100,
+		"attack": 102,
+		"defense": 150,
+		"egg": 5,
+		"attacks": [
+			"RockSmash",
+			"MudSlap"
+		],
+		"special_attacks": [
+			"BoneClub",
+			"Dig",
+			"Bulldoze"
+		],
+		"evolution_name": "Marowak",
+		"evolution_id": "105"
+	},
+	{
+		"id": "105",
+		"name": "Marowak",
+		"type": "ground",
+		"hp": 120,
+		"attack": 140,
+		"defense": 202,
+		"attacks": [
+			"RockSmash",
+			"MudSlap"
+		],
+		"special_attacks": [
+			"BoneClub",
+			"Dig",
+			"Earthquake"
+		]
+	},
+	{
+		"id": "106",
+		"name": "Hitmonlee",
+		"type": "fighting",
+		"hp": 100,
+		"attack": 148,
+		"defense": 172,
+		"egg": 10,
+		"attacks": [
+			"LowKick",
+			"RockSmash"
+		],
+		"special_attacks": [
+			"LowSweep",
+			"StoneEdge",
+			"Stomp"
+		]
+	},
+	{
+		"id": "107",
+		"name": "Hitmonchan",
+		"type": "fighting",
+		"hp": 100,
+		"attack": 138,
+		"defense": 204,
+		"egg": 10,
+		"attacks": [
+			"BulletPunch",
+			"RockSmash"
+		],
+		"special_attacks": [
+			"FirePunch",
+			"IcePunch",
+			"ThunderPunch",
+			"BrickBreak"
+		]
+	},
+	{
+		"id": "108",
+		"name": "Lickitung",
+		"type": "normal",
+		"hp": 180,
+		"attack": 126,
+		"defense": 160,
+		"egg": 5,
+		"attacks": [
+			"Lick",
+			"ZenHeadbutt"
+		],
+		"special_attacks": [
+			"HyperBeam",
+			"Stomp",
+			"PowerWhip"
+		]
+	},
+	{
+		"id": "109",
+		"name": "Koffing",
+		"cost": 50,
+		"type": "poison",
+		"hp": 80,
+		"attack": 136,
+		"defense": 142,
+		"egg": 5,
+		"attacks": [
+			"Tackle",
+			"Acid"
+		],
+		"special_attacks": [
+			"DarkPulse",
+			"Sludge",
+			"SludgeBomb"
+		],
+		"evolution_name": "Weezing",
+		"evolution_id": "110"
+	},
+	{
+		"id": "110",
+		"name": "Weezing",
+		"type": "poison",
+		"hp": 130,
+		"attack": 190,
+		"defense": 198,
+		"attacks": [
+			"Tackle",
+			"Acid"
+		],
+		"special_attacks": [
+			"DarkPulse",
+			"ShadowBall",
+			"SludgeBomb"
+		]
+	},
+	{
+		"id": "111",
+		"name": "Rhyhorn",
+		"cost": 50,
+		"type": [
+			"ground",
+			"rock"
+		],
+		"hp": 160,
+		"attack": 110,
+		"defense": 116,
+		"egg": 5,
+		"attacks": [
+			"RockSmash",
+			"MudSlap"
+		],
+		"special_attacks": [
+			"Bulldoze",
+			"Stomp",
+			"HornAttack"
+		],
+		"evolution_name": "Rhydon",
+		"evolution_id": "112"
+	},
+	{
+		"id": "112",
+		"name": "Rhydon",
+		"type": [
+			"ground",
+			"rock"
+		],
+		"hp": 210,
+		"attack": 116,
+		"defense": 160,
+		"attacks": [
+			"RockSmash",
+			"MudSlap"
+		],
+		"special_attacks": [
+			"Earthquake",
+			"StoneEdge",
+			"Megahorn"
+		]
+	},
+	{
+		"id": "113",
+		"name": "Chansey",
+		"type": "normal",
+		"hp": 500,
+		"attack": 40,
+		"defense": 60,
+		"egg": 10,
+		"attacks": [
+			"Pound",
+			"ZenHeadbutt"
+		],
+		"special_attacks": [
+			"DazzlingGleam",
+			"Psybeam",
+			"Psychic"
+		]
+	},
+	{
+		"id": "114",
+		"name": "Tangela",
+		"type": "grass",
+		"hp": 130,
+		"attack": 164,
+		"defense": 152,
+		"egg": 5,
+		"attacks": "VineWhip",
+		"special_attacks": [
+			"SludgeBomb",
+			"SolarBeam",
+			"PowerWhip"
+		]
+	},
+	{
+		"id": "115",
+		"name": "Kangaskhan",
+		"type": "normal",
+		"hp": 210,
+		"attack": 142,
+		"defense": 178,
+		"egg": 5,
+		"attacks": [
+			"LowKick",
+			"MudSlap"
+		],
+		"special_attacks": [
+			"Earthquake",
+			"BrickBreak",
+			"Stomp"
+		]
+	},
+	{
+		"id": "116",
+		"name": "Horsea",
+		"cost": 50,
+		"type": "water",
+		"hp": 60,
+		"attack": 122,
+		"defense": 100,
+		"egg": 5,
+		"attacks": [
+			"WaterGun",
+			"Bubble"
+		],
+		"special_attacks": [
+			"BubbleBeam",
+			"DragonPulse",
+			"FlashCannon"
+		],
+		"evolution_name": "Seadra",
+		"evolution_id": "117"
+	},
+	{
+		"id": "117",
+		"name": "Seadra",
+		"type": "water",
+		"hp": 110,
+		"attack": 176,
+		"defense": 150,
+		"attacks": [
+			"WaterGun",
+			"DragonBreath"
+		],
+		"special_attacks": [
+			"HydroPump",
+			"DragonPulse",
+			"Blizzard"
+		]
+	},
+	{
+		"id": "118",
+		"name": "Goldeen",
+		"cost": 50,
+		"type": "water",
+		"hp": 90,
+		"attack": 112,
+		"defense": 126,
+		"egg": 5,
+		"attacks": [
+			"MudShot",
+			"Peck"
+		],
+		"special_attacks": [
+			"AquaTail",
+			"HornAttack",
+			"WaterPulse"
+		],
+		"evolution_name": "Seaking",
+		"evolution_id": "119"
+	},
+	{
+		"id": "119",
+		"name": "Seaking",
+		"type": "water",
+		"hp": 160,
+		"attack": 172,
+		"defense": 160,
+		"attacks": [
+			"PoisonJab",
+			"Peck"
+		],
+		"special_attacks": [
+			"DrillRun",
+			"Megahorn",
+			"IcyWind"
+		]
+	},
+	{
+		"id": "120",
+		"name": "Staryu",
+		"cost": 50,
+		"type": "water",
+		"hp": 60,
+		"attack": 130,
+		"defense": 128,
+		"egg": 5,
+		"attacks": [
+			"WaterGun",
+			"QuickAttack"
+		],
+		"special_attacks": [
+			"BubbleBeam",
+			"PowerGem",
+			"Swift"
+		],
+		"evolution_name": "Starmie",
+		"evolution_id": "121"
+	},
+	{
+		"id": "121",
+		"name": "Starmie",
+		"type": [
+			"water",
+			"psychic"
+		],
+		"hp": 120,
+		"attack": 194,
+		"defense": 192,
+		"attacks": [
+			"WaterGun",
+			"QuickAttack"
+		],
+		"special_attacks": [
+			"HydroPump",
+			"PowerGem",
+			"Psybeam"
+		]
+	},
+	{
+		"id": "122",
+		"name": "Mr.Mime",
+		"type": [
+			"psychic",
+			"fairy"
+		],
+		"hp": 80,
+		"attack": 154,
+		"defense": 196,
+		"egg": 10,
+		"attacks": [
+			"Confusion",
+			"ZenHeadbutt"
+		],
+		"special_attacks": [
+			"ShadowBall",
+			"Psybeam",
+			"Psychic"
+		]
+	},
+	{
+		"id": "123",
+		"name": "Scyther",
+		"type": [
+			"bug",
+			"flying"
+		],
+		"hp": 140,
+		"attack": 176,
+		"defense": 180,
+		"egg": 10,
+		"attacks": [
+			"SteelWing",
+			"FuryCutter"
+		],
+		"special_attacks": [
+			"BugBuzz",
+			"X-Scissor",
+			"NightSlash"
+		]
+	},
+	{
+		"id": "124",
+		"name": "Jynx",
+		"type": [
+			"ice",
+			"psychic"
+		],
+		"hp": 130,
+		"attack": 172,
+		"defense": 134,
+		"egg": 10,
+		"attacks": [
+			"Pound",
+			"FrostBreath"
+		],
+		"special_attacks": [
+			"Psyshock",
+			"IcePunch",
+			"DrainingKiss"
+		]
+	},
+	{
+		"id": "125",
+		"name": "Electabuzz",
+		"type": "electric",
+		"hp": 130,
+		"attack": 198,
+		"defense": 160,
+		"egg": 10,
+		"attacks": [
+			"LowKick",
+			"ThunderShock"
+		],
+		"special_attacks": [
+			"Thunderbolt",
+			"Thunder",
+			"ThunderPunch"
+		]
+	},
+	{
+		"id": "126",
+		"name": "Magmar",
+		"type": "fire",
+		"hp": 130,
+		"attack": 214,
+		"defense": 158,
+		"egg": 10,
+		"attacks": [
+			"KarateChop",
+			"Ember"
+		],
+		"special_attacks": [
+			"FireBlast",
+			"Flamethrower",
+			"FirePunch"
+		]
+	},
+	{
+		"id": "127",
+		"name": "Pinsir",
+		"type": "bug",
+		"hp": 130,
+		"attack": 184,
+		"defense": 186,
+		"egg": 10,
+		"attacks": [
+			"FuryCutter",
+			"RockSmash"
+		],
+		"special_attacks": [
+			"Submission",
+			"ViceGrip",
+			"X-Scissor"
+		]
+	},
+	{
+		"id": "128",
+		"name": "Tauros",
+		"type": "normal",
+		"hp": 150,
+		"attack": 148,
+		"defense": 184,
+		"egg": 5,
+		"attacks": [
+			"Tackle",
+			"ZenHeadbutt"
+		],
+		"special_attacks": [
+			"Earthquake",
+			"IronHead",
+			"HornAttack"
+		]
+	},
+	{
+		"id": "129",
+		"name": "Magikarp",
+		"cost": 400,
+		"type": "water",
+		"hp": 40,
+		"attack": 42,
+		"defense": 84,
+		"egg": 2,
+		"attacks": "Splash",
+		"special_attacks": "Struggle",
+		"evolution_name": "Gyarados",
+		"evolution_id": "130"
+	},
+	{
+		"id": "130",
+		"name": "Gyarados",
+		"type": [
+			"water",
+			"flying"
+		],
+		"hp": 190,
+		"attack": 192,
+		"defense": 196,
+		"attacks": [
+			"Bite",
+			"DragonBreath"
+		],
+		"special_attacks": [
+			"Twister",
+			"HydroPump",
+			"DragonPulse"
+		]
+	},
+	{
+		"id": "131",
+		"name": "Lapras",
+		"type": [
+			"water",
+			"ice"
+		],
+		"hp": 260,
+		"attack": 186,
+		"defense": 190,
+		"egg": 10,
+		"attacks": [
+			"FrostBreath",
+			"IceShard"
+		],
+		"special_attacks": [
+			"IceBeam",
+			"DragonPulse",
+			"Blizzard"
+		]
+	},
+	{
+		"id": "132",
+		"name": "Ditto",
+		"type": "normal",
+		"hp": 96,
+		"attack": 110,
+		"defense": 110,
+		"attacks": "Pound",
+		"special_attacks": "Struggle"
+	},
+	{
+		"id": "133",
+		"name": "Eevee",
+		"cost": 25,
+		"type": "normal",
+		"hp": 110,
+		"attack": 114,
+		"defense": 128,
+		"egg": 10,
+		"attacks": [
+			"Tackle",
+			"QuickAttack"
+		],
+		"special_attacks": [
+			"BodySlam",
+			"Dig",
+			"Swift"
+		],
+		"evolution_name": [
+			"Vaporeon",
+			"Jolteon",
+			"Flareon"
+		],
+		"evolution_id": [
+			"134",
+			"135",
+			"136"
+		]
+	},
+	{
+		"id": "134",
+		"name": "Vaporeon",
+		"type": "water",
+		"hp": 260,
+		"attack": 186,
+		"defense": 168,
+		"attacks": "WaterGun",
+		"special_attacks": [
+			"AquaTail",
+			"WaterPulse",
+			"HydroPump"
+		]
+	},
+	{
+		"id": "135",
+		"name": "Jolteon",
+		"type": "electric",
+		"hp": 130,
+		"attack": 192,
+		"defense": 174,
+		"attacks": "ThunderShock",
+		"special_attacks": [
+			"Thunderbolt",
+			"Discharge",
+			"Thunder"
+		]
+	},
+	{
+		"id": "136",
+		"name": "Flareon",
+		"type": "fire",
+		"hp": 130,
+		"attack": 238,
+		"defense": 178,
+		"attacks": "Ember",
+		"special_attacks": [
+			"Flamethrower",
+			"FireBlast",
+			"HeatWave"
+		]
+	},
+	{
+		"id": "137",
+		"name": "Porygon",
+		"type": "normal",
+		"hp": 130,
+		"attack": 156,
+		"defense": 158,
+		"egg": 5,
+		"attacks": [
+			"Tackle",
+			"QuickAttack"
+		],
+		"special_attacks": [
+			"Discharge",
+			"Psybeam",
+			"SignalBeam"
+		]
+	},
+	{
+		"id": "138",
+		"name": "Omanyte",
+		"cost": 50,
+		"type": [
+			"rock",
+			"water"
+		],
+		"hp": 70,
+		"attack": 132,
+		"defense": 160,
+		"egg": 10,
+		"attacks": [
+			"WaterGun",
+			"MudShot"
+		],
+		"special_attacks": [
+			"RockTomb",
+			"AncientPower",
+			"Brine"
+		],
+		"evolution_name": "Omastar",
+		"evolution_id": "139"
+	},
+	{
+		"id": "139",
+		"name": "Omastar",
+		"type": [
+			"rock",
+			"water"
+		],
+		"hp": 140,
+		"attack": 180,
+		"defense": 202,
+		"attacks": [
+			"WaterGun",
+			"RockThrow"
+		],
+		"special_attacks": [
+			"RockSlide",
+			"AncientPower",
+			"HydroPump"
+		]
+	},
+	{
+		"id": "140",
+		"name": "Kabuto",
+		"cost": 50,
+		"type": [
+			"rock",
+			"water"
+		],
+		"hp": 60,
+		"attack": 148,
+		"defense": 142,
+		"egg": 10,
+		"attacks": [
+			"Scratch",
+			"MudShot"
+		],
+		"special_attacks": [
+			"AquaJet",
+			"RockTomb",
+			"AncientPower"
+		],
+		"evolution_name": "Kabutops",
+		"evolution_id": "141"
+	},
+	{
+		"id": "141",
+		"name": "Kabutops",
+		"type": [
+			"rock",
+			"water"
+		],
+		"hp": 120,
+		"attack": 190,
+		"defense": 190,
+		"attacks": [
+			"FuryCutter",
+			"MudShot"
+		],
+		"special_attacks": [
+			"WaterPulse",
+			"StoneEdge",
+			"AncientPower"
+		]
+	},
+	{
+		"id": "142",
+		"name": "Aerodactyl",
+		"type": [
+			"rock",
+			"flying"
+		],
+		"hp": 160,
+		"attack": 182,
+		"defense": 162,
+		"egg": 10,
+		"attacks": [
+			"Bite",
+			"SteelWing"
+		],
+		"special_attacks": [
+			"IronHead",
+			"HyperBeam",
+			"AncientPower"
+		]
+	},
+	{
+		"id": "143",
+		"name": "Snorlax",
+		"type": "normal",
+		"hp": 320,
+		"attack": 180,
+		"defense": 180,
+		"egg": 10,
+		"attacks": [
+			"Lick",
+			"ZenHeadbutt"
+		],
+		"special_attacks": [
+			"HyperBeam",
+			"Earthquake",
+			"BodySlam"
+		]
+	},
+	{
+		"id": "144",
+		"name": "Articuno",
+		"type": [
+			"ice",
+			"flying"
+		],
+		"hp": 180,
+		"attack": 198,
+		"defense": 242,
+		"attacks": "FrostBreath",
+		"special_attacks": [
+			"IceBeam",
+			"IcyWind",
+			"Blizzard"
+		]
+	},
+	{
+		"id": "145",
+		"name": "Zapdos",
+		"type": [
+			"electric",
+			"flying"
+		],
+		"hp": 180,
+		"attack": 232,
+		"defense": 194,
+		"attacks": "ThunderShock",
+		"special_attacks": [
+			"Discharge",
+			"Thunderbolt",
+			"Thunder"
+		]
+	},
+	{
+		"id": "146",
+		"name": "Moltres",
+		"type": [
+			"fire",
+			"flying"
+		],
+		"hp": 180,
+		"attack": 242,
+		"defense": 194,
+		"attacks": "Ember",
+		"special_attacks": [
+			"FireBlast",
+			"HeatWave",
+			"Flamethrower"
+		]
+	},
+	{
+		"id": "147",
+		"name": "Dratini",
+		"cost": 25,
+		"type": "dragon",
+		"hp": 82,
+		"attack": 128,
+		"defense": 110,
+		"egg": 10,
+		"attacks": "DragonBreath",
+		"special_attacks": [
+			"Wrap",
+			"AquaTail",
+			"Twister"
+		],
+		"evolution_name": "Dragonair",
+		"evolution_id": "148"
+	},
+	{
+		"id": "148",
+		"name": "Dragonair",
+		"cost": 100,
+		"type": "dragon",
+		"hp": 122,
+		"attack": 170,
+		"defense": 152,
+		"attacks": "DragonBreath",
+		"special_attacks": [
+			"Wrap",
+			"AquaTail",
+			"DragonPulse"
+		],
+		"evolution_name": "Dragonite",
+		"evolution_id": "149"
+	},
+	{
+		"id": "149",
+		"name": "Dragonite",
+		"type": [
+			"dragon",
+			"flying"
+		],
+		"hp": 182,
+		"attack": 250,
+		"defense": 212,
+		"attacks": [
+			"DragonBreath",
+			"SteelWing"
+		],
+		"special_attacks": [
+			"HyperBeam",
+			"DragonClaw",
+			"DragonPulse"
+		]
+	},
+	{
+		"id": "150",
+		"name": "Mewtwo",
+		"type": "psychic",
+		"hp": 212,
+		"attack": 284,
+		"defense": 202,
+		"attacks": [
+			"Confusion",
+			"PsychoCut"
+		],
+		"special_attacks": [
+			"Psychic",
+			"ShadowBall",
+			"HyperBeam"
+		]
+	},
+	{
+		"id": "151",
+		"name": "Mew",
+		"type": "psychic",
+		"hp": 200,
+		"attack": 220,
+		"defense": 220,
+		"attacks": "Pound",
+		"special_attacks": [
+			"Hurricane",
+			"Earthquake",
+			"Psychic",
+			"DragonPulse",
+			"Thunder",
+			"Moonblast",
+			"FireBlast",
+			"SolarBeam",
+			"HyperBeam"
+		]
+	}
 ]
