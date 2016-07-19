@@ -191,7 +191,7 @@
             <div class="navbar">
               <div class="navbar-inner">
                 <div class="center base_name">Pokemon</div>
-                <div class="right"><a href="#" class="link close-popup">Done</a></div>
+                <div class="right"><a href="#" class="link close-popup" onclick="scrollToTop();">Done</a></div>
               </div>
             </div>
             <div class="page-content">
@@ -294,7 +294,7 @@
 					</li>
 				  </ul>
 				</div>
-				<a href="#" class="button button-fill button-raised close-popup">Close</a>
+				<a href="#" class="button button-fill button-raised close-popup" onclick="scrollToTop();">Close</a>
               </div>
             </div>
           </div>
@@ -307,6 +307,7 @@
 	<script>
 	scrollToTop = function(){
 		$(".evolution-popup .page-content").scrollTop(0);
+		$(".evolution-popup input").val("");
 	}
 	$(document).on("input",".close-popup",function(){
 		scrollToTop();
