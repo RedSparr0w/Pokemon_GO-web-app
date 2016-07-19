@@ -308,10 +308,9 @@
 	scrollToTop = function(){
 		$(".evolution-popup .page-content").scrollTop(0);
 		$(".evolution-popup input").val("");
+		$(".evolution-popup .item-subtitle").text("0");
+		
 	}
-	$(document).on("input",".close-popup",function(){
-		scrollToTop();
-	});
 	evolutionPopup = function(data){
 		//Base Pokemon
 		$(".evolution-popup #base_image").attr("src",data.dataset.img);
