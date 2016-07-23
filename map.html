@@ -1,0 +1,143 @@
+<html><head>
+	<title>Leaflet Quick Start Guide Example</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon" href="include/images/icon-256-transperant.png">
+    <meta name="theme-color" content="#2196f3">
+	<meta name="author" content="RedSparr0w" />
+	<meta name="description" content="Pokemon GO Web App" />
+	<link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css">
+</head>
+<body>
+	<div id="map" style="width: 100vw; height: 100vh; position: relative;" class="leaflet-container leaflet-fade-anim leaflet-grab leaflet-touch-drag" tabindex="0"></div>
+	<script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script>
+	try{
+		alert("test1");
+		var lat=lon=map=LeafIcon=0;
+		String.prototype.padZero= function(len = 3, c = '0'){
+			var s= this;
+			while(s.length< len) s= c+ s;
+			return s;
+		}
+		function secondsToString(sec) {
+			var o = parseInt(sec, 10),
+				n = Math.floor(o / 3600),
+				i = Math.floor((o - (n * 3600)) / 60),
+				t = o - (n * 3600) - (i * 60);
+			if (n < 10) n = '0' + n;
+			if (i < 10) i = '0' + i;
+			if (t < 10) t = '0' + t;
+			if (n > 0) {
+				return n + ':' + i + ':' + t
+			};
+			return i + ':' + t
+		}
+		function setCookie(cname, cvalue, exdays=30) {
+			var d = new Date();
+			d.setTime(d.getTime() + (exdays*24*60*60*1000));
+			var expires = "expires="+d.toUTCString();
+			document.cookie = cname + "=" + cvalue + "; " + expires;
+		}
+		function getCookie(cname) {
+			var name = cname + "=";
+			var ca = document.cookie.split(';');
+			for(var i = 0; i < ca.length; i++) {
+				var c = ca[i];
+				while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				}
+			}
+			return "";
+		}
+		function getJobId(){
+			$.ajax({
+				dataType: 'json',
+				url:'get.php?url=https://pokevision.com/map/scan/'+lat+'/'+lon,
+				success: function(data){
+					if (data.hasOwnProperty("jobId")){
+						getMapPokemon(data.jobId);
+					}else{
+						if(confirm("Servers are currently down.\nDo you wawnt to re-check in 1 minute?\n")){
+							setTimeout(function(){
+								getJobId();
+							},60000);
+						}
+					}
+				}
+			});
+		}
+		function getMapPokemon(jobId){
+			$.ajax({
+				dataType: 'json',
+				url:'get.php?url=https://pokevision.com/map/data/'+lat+'/'+lon+'/'+jobId,
+				success: function(data){
+					if (data.hasOwnProperty("pokemon")){
+						data.pokemon.forEach(function(i){
+							var marker = L.marker([i.latitude,i.longitude], {icon: new LeafIcon({iconUrl: 'include/images/'+i.pokemonId.padZero(3)+'.png'})}).bindPopup("Despawns in: "+(i.expiration_time - Math.floor(+new Date() / 1000))+"s").addTo(map);
+							setTimeout(function(){
+								marker.remove();
+							},i.expiration_time - Math.floor(+new Date() / 1000)*1000);
+						});
+						setCookie("NextCheck",Math.floor(+new Date() / 1000)+40);
+					}else if (data.hasOwnProperty("jobStatus") && data.jobStatus == "in_progress"){
+						setTimeout(function(){
+							getMapPokemon(jobId);
+						},3000);
+					}else{
+						setTimeout(function(){
+							getMapPokemon(jobId);
+						},30000);
+					}
+				}
+			});
+		}
+		navigator.geolocation.getCurrentPosition(function(location) {
+			lat = location.coords.latitude;
+			lon = location.coords.longitude;
+			map = L.map('map').setView([lat,lon], 18);
+
+			L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
+			
+			LeafIcon = L.Icon.extend({
+				options: {
+					iconSize:     [50, 50],
+					iconAnchor:   [25, 25],
+					popupAnchor:  [0, -20]
+				}
+			});
+			L.marker([lat,lon], {icon: new LeafIcon({iconUrl: 'include/images/trainer.gif'})}).bindPopup("You are here!").addTo(map);
+			if (Math.floor(+new Date() / 1000) > getCookie("NextCheck")) {
+				getJobId();
+			}else{
+				setTimeout(function(){
+					getJobId();
+				},30000);
+			}
+		});
+	}catch(e){
+		alert(e);
+	}
+	</script>
+	<style>
+	.leaflet-popup-content{
+		text-align:center;
+	}
+	html {
+		overflow: scroll;
+		overflow-x: hidden;
+	}
+	::-webkit-scrollbar {
+		width: 0px;  /* remove scrollbar space */
+		background: transparent;  /* optional: just make scrollbar invisible */
+	}
+	</style>
+
+</body></html>
